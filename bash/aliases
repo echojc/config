@@ -1,1 +1,3 @@
 alias ll='ls -l'
+alias g='git'
+alias tm='tmux'
