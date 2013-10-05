@@ -1,0 +1,19 @@
+set nocursorline " don't highlight current line
+
+" keyboard shortcuts
+inoremap jk <ESC>
+nmap ; :
+
+" gui settings
+if (&t_Co == 256 || has('gui_running'))
+  if ($TERM_PROGRAM == 'iTerm.app')
+    colorscheme solarized
+  else
+    colorscheme desert
+  endif
+endif
+
+" hotkeys
+nmap <leader>c :noh<CR>
+nmap <leader>w :%s/<c-r><c-w>/
+nmap <leader>r :%s/
