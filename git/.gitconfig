@@ -1,0 +1,24 @@
+[user]
+	name = Jonathan Chow
+	email = me@echo.sh
+[push]
+	default = simple
+[alias]
+	l = log --graph --pretty=format:'%C(yellow)%h%Cred%d %C(cyan)%an %Creset%s %Cgreen(%cr)'
+	o = checkout
+	p = pull --rebase
+	s = status
+	c = commit
+	n = clone
+	e = cherry-pick
+	d = diff
+	w = diff --word-diff=color
+	t = stash
+	g = gui
+	u = push
+	f = fetch
+	m = merge --no-ff
+	a = add
+	r = rebase
+	rc = rebase --continue
+	mt = mergetool
