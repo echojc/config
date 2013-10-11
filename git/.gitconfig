@@ -18,6 +18,7 @@
 	u = push
 	f = fetch
 	m = merge --no-ff
+	ff = merge --ff-only
 	a = add
 	r = rebase
 	rc = rebase --continue
