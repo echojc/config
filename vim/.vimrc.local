@@ -20,3 +20,6 @@ nmap <leader>r :%s/
 
 " last buffer
 nmap <space><space> :b#<cr>
+
+" tabs! use 2 spaces by default, we can override for random file types
+set shiftwidth=2 expandtab tabstop=2 softtabstop=2
