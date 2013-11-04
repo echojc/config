@@ -23,3 +23,6 @@ nmap <space><space> :b#<cr>
 
 " tabs! use 2 spaces by default, we can override for random file types
 set shiftwidth=2 expandtab tabstop=2 softtabstop=2
+
+" truncate whitespace on save
+autocmd BufWritePre *.{py,coffee,scala} :%s/\s\+$//e
