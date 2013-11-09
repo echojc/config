@@ -24,3 +24,4 @@
 	rc = rebase --continue
 	mt = mergetool
 	b = branch
+	rh = reset --hard
