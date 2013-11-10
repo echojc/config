@@ -2,6 +2,7 @@ set nocursorline " don't highlight current line
 
 " keyboard shortcuts
 inoremap jk <ESC>
+cnoremap jk <ESC>
 nmap ; :
 
 " gui settings
