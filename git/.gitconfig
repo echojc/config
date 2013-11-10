@@ -25,3 +25,5 @@
 	mt = mergetool
 	b = branch
 	rh = reset --hard
+[color]
+	ui = true
