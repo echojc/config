@@ -52,6 +52,9 @@ export CONFIG="$HOME/config"
 # easier vi-mode
 bindkey -M viins 'jk' vi-cmd-mode
 
+# search history
+bindkey ^R history-incremental-pattern-search-backward
+
 # prompt
 autoload -U colors && colors
 PROMPT="%c$ "
