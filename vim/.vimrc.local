@@ -31,3 +31,6 @@ autocmd BufWritePre * :%s/\s\+$//e
 " paste mode
 nmap <leader>p :set invpaste paste?<CR>
 set showmode
+
+" allow changed buffers to be hidden
+set hidden
