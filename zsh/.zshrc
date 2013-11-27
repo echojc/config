@@ -63,3 +63,8 @@ PROMPT="%c$ "
 if [[ -e "$CONFIG/zsh/git-prompt.sh" ]]; then
   source $CONFIG/zsh/git-prompt.sh
 fi
+
+# custom aliases
+if [[ -e "$CONFIG/zsh/aliases" ]]; then
+  source $CONFIG/zsh/aliases
+fi
