@@ -5,6 +5,7 @@ set cursorline
 inoremap jk <ESC>
 cnoremap jk <ESC>
 nmap ; :
+vmap ; :
 
 " gui settings
 if (&t_Co == 256 || has('gui_running'))
@@ -35,3 +36,6 @@ set showmode
 
 " allow changed buffers to be hidden
 set hidden
+
+" highlight current line
+set cursorline
