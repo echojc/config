@@ -67,3 +67,6 @@ fi
 if [[ -e "$CONFIG/zsh/aliases" ]]; then
   source $CONFIG/zsh/aliases
 fi
+if [[ -e "$HOME/.aliases.local" ]]; then
+  source $HOME/.aliases.local
+fi
