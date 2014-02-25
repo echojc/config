@@ -39,3 +39,12 @@ set hidden
 
 " highlight current line
 set cursorline
+
+" scala unicode
+au FileType scala iabbrev => ⇒
+au FileType scala iabbrev <- ←
+au FileType scala iabbrev -> →
+
+" scala formatter (work pc)
+au BufEnter *.scala setl formatprg=java\ -jar\ $HOME/opt/scalariform.jar\ -f\ -q\ -p=$HOME/code/dev-tools/eclipse/scala-formatter.properties\ --stdin\ --stdout
+nmap <leader>m :SortScalaImports<CR>mfgggqG`f
