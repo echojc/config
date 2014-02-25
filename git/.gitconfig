@@ -6,7 +6,7 @@
 [alias]
 	l = log --graph --pretty=format:'%C(yellow)%h%Cred%d %C(cyan)%an %Creset%s %Cgreen(%cr)'
 	o = checkout
-	p = pull --rebase
+	p = pull --rebase -p
 	s = status
 	c = commit
 	n = clone
@@ -16,7 +16,7 @@
 	t = stash
 	g = gui
 	u = push
-	f = fetch
+	f = fetch -p
 	m = merge --no-ff
 	ff = merge --ff-only
 	a = add
@@ -27,3 +27,8 @@
 	rh = reset --hard
 [color]
 	ui = true
+[core]
+	editor = vim
+[merge]
+	defaultToUpstream = true
+	tool = vimdiff
