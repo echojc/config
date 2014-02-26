@@ -6,3 +6,4 @@ $DIR/zsh/deploy.sh
 $DIR/tmux/deploy.sh
 $DIR/vim/deploy.sh
 $DIR/git/deploy.sh
+$DIR/scala/deploy.sh

@@ -1,3 +1,4 @@
 #!/bin/zsh
 alias tm="tmux"
 alias o="open"
+alias scala="scala -i $HOME/.scalarc"
