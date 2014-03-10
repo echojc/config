@@ -1,4 +1,4 @@
 #!/bin/zsh
 alias tm="tmux"
 alias o="open"
-alias scala="scala -i $HOME/.scalarc"
+alias scala="scala -cp \"$HOME/.scala/lib/*\" -i $HOME/.scalarc"
