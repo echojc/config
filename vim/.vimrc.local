@@ -48,3 +48,7 @@ au FileType scala iabbrev -> →
 " scala formatter (work pc)
 au BufEnter *.scala setl formatprg=java\ -jar\ $HOME/opt/scalariform.jar\ -f\ -q\ -p=$HOME/code/dev-tools/eclipse/scala-formatter.properties\ --stdin\ --stdout
 nmap <leader>m :SortScalaImports<CR>mfgggqG`f
+
+" save the state of files when closing
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview
