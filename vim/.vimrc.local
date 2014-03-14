@@ -20,6 +20,7 @@ endif
 nmap <leader>c :noh<CR>
 nmap <leader>w :%s/<c-r><c-w>/
 nmap <leader>r :%s/
+nmap <leader>l $bC
 
 " last buffer
 nmap <space><space> :b#<cr>
