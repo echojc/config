@@ -58,3 +58,8 @@ nmap <leader>m :SortScalaImports<CR>mfgggqG`f
 " save the state of files when closing
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
+
+" vimdiff
+nmap <leader>dr :diffg RE<CR>
+nmap <leader>dl :diffg LO<CR>
+nmap <leader>du :diffupdate<CR>
