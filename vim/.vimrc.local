@@ -51,7 +51,7 @@ au FileType scala iabbrev -> →
 
 " scala formatter (work pc)
 let g:scala_sort_across_groups=1
-let g:scala_first_party_namespaces='\(atm\|co\.movio\|clients\)'
+let g:scala_first_party_namespaces='\(atm\|co\.movio\|clients\|bonc\)'
 au BufEnter *.scala setl formatprg=java\ -jar\ $HOME/opt/scalariform.jar\ -f\ -q\ -p=$HOME/code/dev-tools/eclipse/scala-formatter.properties\ --stdin\ --stdout
 nmap <leader>m :SortScalaImports<CR>mfgggqG`f
 
