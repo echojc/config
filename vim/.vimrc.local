@@ -33,8 +33,9 @@ set shiftwidth=2 expandtab tabstop=2 softtabstop=2
 " truncate whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
 
-" paste mode
+" modes
 nmap <leader>p :set invpaste paste?<CR>
+nmap <leader>iw :set invwrap wrap?<CR>
 set showmode
 
 " allow changed buffers to be hidden
