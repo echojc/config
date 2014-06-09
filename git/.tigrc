@@ -1,2 +1,3 @@
 set show-author = abbreviated
 set show-id = true
+set author-width = 10
