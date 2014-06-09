@@ -1,3 +1,10 @@
 set show-author = abbreviated
 set show-id = true
 set author-width = 10
+
+# checkout commit
+bind main u !<git checkout %(commit)
+bind main U !<git checkout -b "%(prompt)" %(commit)
+
+# reset to commit
+bind main r !<git reset %(commit)
