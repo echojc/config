@@ -1,0 +1,4 @@
+Bundle 'derekwyatt/vim-scala'
+Bundle 'tpope/vim-surround'
+Bundle 'kien/ctrlp.vim'
+Bundle 'altercation/vim-colors-solarized'
