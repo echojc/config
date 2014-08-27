@@ -2,7 +2,7 @@
 alias tm="tmux"
 alias o="open"
 alias scala="scala -cp \"$HOME/.scala/lib/*\" -i $HOME/.scalarc"
-alias fn="find -name"
+alias fn="find . -name"
 alias v="vim"
 alias tg="tig"
 alias sv="python -m SimpleHTTPServer"
