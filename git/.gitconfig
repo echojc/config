@@ -36,3 +36,5 @@
 	keepBackup = false
 [diff]
 	algorithm = patience
+[hub]
+	protocol = https
