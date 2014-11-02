@@ -31,6 +31,7 @@ nmap <space><space> :b#<cr>
 
 " tabs! use 2 spaces by default, we can override for random file types
 set shiftwidth=2 expandtab tabstop=2 softtabstop=2
+au BufEnter *.php set shiftwidth=4 tabstop=4 softtabstop=4 expandtab
 
 " truncate whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
