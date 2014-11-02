@@ -24,6 +24,7 @@ nmap <leader>r :%s/
 nmap <leader>l $bC
 nmap <leader>ig :%s/\<it("/ignore("/<CR>
 nmap <leader>it :%s/\<ignore("/it("/<CR>
+vmap <leader>y "+y
 
 " last buffer
 nmap <space><space> :b#<cr>
