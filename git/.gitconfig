@@ -11,8 +11,8 @@
 	c = commit
 	n = clone
 	e = cherry-pick
-	d = diff
-	w = diff --word-diff=color
+	d = diff -w
+	w = diff -w --word-diff=color
 	t = stash
 	g = gui
 	u = push
