@@ -33,6 +33,10 @@ nmap <space><space> :b#<cr>
 set shiftwidth=2 expandtab tabstop=2 softtabstop=2
 au BufEnter *.php set shiftwidth=4 tabstop=4 softtabstop=4 expandtab
 
+" line length markes
+set colorcolumn=80,100,120
+au FileType gitcommit set colorcolumn=74
+
 " truncate whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
 
