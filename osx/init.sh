@@ -1,5 +1,6 @@
 #!/bin/sh
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+defaults write NSGlobalDomain InitialKeyRepeat -int 10
 defaults write NSGlobalDomain KeyRepeat -int 0
 defaults write com.apple.screencapture type -string "png"
 defaults write .GlobalPreferences com.apple.mouse.scaling -1
