@@ -14,7 +14,7 @@
 	d = diff -w
 	w = diff -w --word-diff=color
 	t = stash
-	g = gui
+	g = grep
 	u = push
 	f = fetch -p
 	m = merge --no-ff
