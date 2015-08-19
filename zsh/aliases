@@ -7,6 +7,7 @@ alias v="vim"
 alias tg="tig"
 alias sv="python -m SimpleHTTPServer"
 alias less="less -i"
+alias ll="ls -lhv"
 
 # list git branches in order of oldness
 alias gbt='for k in $(git branch --merged|grep -v "\->"|sed s/^..//);do echo -e $(git log -1 --pretty=format:"%Cgreen%ci %Cred%cr%Creset" "$k")\\t"$k";done|sort|more'
