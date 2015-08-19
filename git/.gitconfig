@@ -6,7 +6,7 @@
 [alias]
 	l = log --graph --pretty=format:'%C(yellow)%h%Cred%d %C(cyan)%an %Creset%s %Cgreen(%cr)'
 	o = checkout
-	p = pull --rebase -p
+	p = pull --rebase --tags -p
 	s = status
 	c = commit
 	n = clone
