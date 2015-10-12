@@ -1,6 +1,8 @@
-set show-author = abbreviated
-set show-id = true
-set author-width = 10
+set main-view = \
+  date:default \
+  id:true \
+  author:abbreviated,width=10 \
+  commit-title:graph=true,refs=true
 
 # checkout commit
 bind main u !<git checkout %(commit)
