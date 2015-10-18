@@ -56,7 +56,7 @@ bindkey ^R history-incremental-pattern-search-backward
 
 # prompt
 autoload -U colors && colors
-PROMPT="%c$ "
+PROMPT="%{$fg[yellow]%}%c$%{$reset_color%} "
 
 # git rprompt
 if [[ -e "$CONFIG/zsh/git-prompt.sh" ]]; then
