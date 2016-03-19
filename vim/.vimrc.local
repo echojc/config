@@ -71,3 +71,42 @@ autocmd BufWinEnter *.* silent loadview
 nmap <leader>dr :diffg RE<CR>
 nmap <leader>dl :diffg LO<CR>
 nmap <leader>du :diffupdate<CR>
+
+" go
+let g:go_fmt_command = "goimports"
+au FileType go set nolist
+"au FileType go nmap <leader>gr <Plug>(go-run)
+au FileType go nmap <leader>gg <Plug>(go-build)
+au FileType go nmap <leader>gt <Plug>(go-test)
+au FileType go nmap <leader>gc <Plug>(go-coverage)
+au FileType go nmap <Leader>ds <Plug>(go-def-split)
+au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
+au FileType go nmap <Leader>dt <Plug>(go-def-tab)
+au FileType go nmap <Leader>gd <Plug>(go-doc)
+au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
+au FileType go nmap <Leader>gb <Plug>(go-doc-browser)
+au FileType go nmap <Leader>gs <Plug>(go-implements)
+au FileType go nmap <Leader>gi <Plug>(go-info)
+au FileType go nmap <Leader>ge <Plug>(go-rename)
+
+" explorer
+nmap <leader>n :Lexplore<CR>
+let g:netrw_liststyle=3
+
+" make j/k move between physical lines and not logical lines
+nmap j gj
+nmap k gk
+vmap j gj
+vmap k gk
+
+" vim -b : edit binary using xxd-format!
+augroup Binary
+  au!
+  au BufReadPre  *.bin let &bin=1
+  au BufReadPost *.bin if &bin | %!xxd
+  au BufReadPost *.bin set ft=xxd | endif
+  au BufWritePre *.bin if &bin | %!xxd -r
+  au BufWritePre *.bin endif
+  au BufWritePost *.bin if &bin | %!xxd
+  au BufWritePost *.bin set nomod | endif
+augroup END
