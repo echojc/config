@@ -29,6 +29,7 @@
 	ui = true
 [core]
 	editor = vim
+	pager = less -i
 [merge]
 	defaultToUpstream = true
 	tool = vimdiff
