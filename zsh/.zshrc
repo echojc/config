@@ -47,7 +47,7 @@ source $ZSH/oh-my-zsh.sh
 
 # environment vars
 export GOPATH="$HOME/go"
-export PATH="$HOME/bin:$GOPATH:$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+export PATH="$HOME/bin:$GOPATH/bin:$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 export PATH="$PATH:/usr/local/opt/go/libexec/bin"
 
 # easier vi-mode
