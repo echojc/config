@@ -74,6 +74,20 @@ nmap <leader>du :diffupdate<CR>
 
 " go
 let g:go_fmt_command = "goimports"
+
+function! s:go_build_and_test()
+  let l:listtype = go#list#Type("quickfix")
+  call go#cmd#Build(0)
+  if empty(go#list#Get(l:listtype))
+    call go#cmd#Test(0, 0)
+    "call go#cmd#Test(0, 1)
+    "if empty(go#list#Get(l:listtype))
+    "  call go#coverage#Buffer(0)
+    "endif
+  endif
+endfunction
+au BufWritePost *.go call s:go_build_and_test()
+
 au FileType go set nolist
 "au FileType go nmap <leader>gr <Plug>(go-run)
 au FileType go nmap <leader>gg <Plug>(go-build)
