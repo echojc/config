@@ -104,6 +104,7 @@ au FileType go nmap <Leader>gd <Plug>(go-def)
 au FileType go nmap <Leader>gs <Plug>(go-implements)
 au FileType go nmap <Leader>gi <Plug>(go-info)
 au FileType go nmap <Leader>ge <Plug>(go-rename)
+au FileType go imap <c-n> <c-x><c-o>
 
 " explorer
 nmap <leader>n :Lexplore<CR>

@@ -5,3 +5,4 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'tpope/vim-fugitive'
 Bundle 'fatih/vim-go'
+Bundle 'nsf/gocode', {'rtp': 'vim/'}
