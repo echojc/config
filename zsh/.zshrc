@@ -72,3 +72,9 @@ fi
 if [[ -e "$HOME/.aliases.local" ]]; then
   source $HOME/.aliases.local
 fi
+
+# cdpath for go
+export CDPATH="."
+export CDPATH="$CDPATH:$GOPATH/src/github.com/echojc:$GOPATH/src/bitbucket.org/echojc"
+export CDPATH="$CDPATH:$GOPATH/src/github.com:$GOPATH/src/bitbucket.org"
+export CDPATH="$CDPATH:$GOPATH/src"
