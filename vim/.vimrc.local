@@ -17,7 +17,7 @@ else
 endif
 
 " hotkeys
-nmap <leader>a :%
+nmap <leader>a :exe '! head -n' . line('.') . ' %'<CR>
 nmap <leader>c :noh<CR>
 nmap <leader>w :%s/<c-r><c-w>/
 nmap <leader>r :%s/
