@@ -86,7 +86,7 @@ function! s:go_build_and_test()
     "endif
   endif
 endfunction
-au BufWritePost *.go call s:go_build_and_test()
+"au BufWritePost *.go call s:go_build_and_test()
 
 au FileType go set nolist
 "au FileType go nmap <leader>gr <Plug>(go-run)
