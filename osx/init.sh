@@ -9,4 +9,4 @@ defaults write com.apple.dashboard mcx-disabled -boolean YES
 defaults write org.openbsd.openssh KeychainIntegration -bool false
 
 # disable startup sound
-sudo nvram SystemAudioVolume=" "
+sudo nvram SystemAudioVolume=%80
