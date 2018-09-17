@@ -4,8 +4,10 @@ set nocompatible
 " configure Vundle
 filetype on " without this vim emits a zero exit status, later, because of :ft off
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
 
 " install Vundle bundles
 if filereadable(expand("~/.vimrc.bundles"))
@@ -16,6 +18,7 @@ if filereadable(expand("~/.vimrc.bundles"))
 endif
 
 " ensure ftdetect et al work by including this after the Vundle stuff
+call vundle#end()
 filetype plugin indent on
 
 " enable syntax highlighting
