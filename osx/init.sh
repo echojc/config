@@ -8,5 +8,6 @@ defaults write com.apple.screencapture type -string "png"
 defaults write com.apple.dashboard mcx-disabled -boolean YES
 defaults write org.openbsd.openssh KeychainIntegration -bool false
 
-# disable startup sound
-sudo nvram SystemAudioVolume=%80
+# disable startup silliness
+sudo nvram BootAudio=%00
+sudo nvram AutoBoot=%00
