@@ -39,3 +39,5 @@
 	algorithm = patience
 [hub]
 	protocol = https
+[init]
+	defaultBranch = master
