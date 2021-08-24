@@ -65,7 +65,7 @@ nmap <leader>m mfgggqG`f
 
 " save the state of files when closing
 autocmd BufWinLeave *.* mkview
-autocmd BufWinEnter *.* silent loadview
+autocmd BufWinEnter *.* silent! loadview
 
 " vimdiff
 nmap <leader>dr :diffg RE<CR>
