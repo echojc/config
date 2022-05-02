@@ -9,6 +9,7 @@ alias sv="python -m SimpleHTTPServer"
 alias less="less -i"
 alias ll="ls -lhv"
 alias la="ls -lhva"
+alias ltr="ls -lhvtr"
 #alias d="sudo docker"
 
 # list git branches in order of oldness
